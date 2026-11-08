@@ -1,6 +1,12 @@
-# SwitchBot Webhook 受信 GAS の使い方
+# SwitchBot Webhook 受信 GAS
 
 このガイドでは [switchbot_webhook_receiver.gs](./switchbot_webhook_receiver.gs) を Google Apps Script (GAS) に登録し、SwitchBot Webhook をスプレッドシートへ保存する方法と、指定したデバイスの特定状態だけをメール通知する方法を説明します。
+
+## 概要
+- Switchbot API v1.1に準拠したWebhookレシーバーです
+- 受信したWebhook文字列を、
+   - ①指定したGoogleスプレッドシートにLogとして記載、
+   - ②設定した条件を満たしたものは指定アドレスにメール送信 します
 
 ## できること
 
